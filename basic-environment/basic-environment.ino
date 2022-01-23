@@ -4,12 +4,13 @@
 dht11 DHT11;
 
 // Initial Variables and Constants
-int lightOutPut = 0;
 const int AirValue = 620;   //you need to replace this value with Value_1
 const int WaterValue = 310;  //you need to replace this value with Value_2
+const int RELAY_PIN = 22;  // the Arduino pin, which connects to the IN pin of relay
+
+int lightOutPut = 0;
 int soilMoistureValue = 0;
 int soilmoisturepercent=0;
-const int RELAY_PIN = 22;  // the Arduino pin, which connects to the IN pin of relay
 
 
 

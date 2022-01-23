@@ -73,6 +73,7 @@ void loop()
   GetMoisturePercentValue(analogRead(A1));
   soilMoistureValue = analogRead(A1);  //put Sensor insert into soil
   soilmoisturepercent = GetMoisturePercentValue(analogRead(A1));
+  // TODO: Break into another function toggle relay
   if(soilmoisturepercent >= 100)
   {
     Serial.print("Soil Moisture: ");
